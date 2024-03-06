@@ -1,23 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"; // Import the React library to create React components
+import PlayersList from "./PlayersList"; // Import the PlayersList component
+import './App.css'; // Import the 'App.css' file for additional styling
 
+// Define the App component, which is a functional component
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>FIFA Player Cards</h1>
+      <PlayersList />
     </div>
   );
 }
